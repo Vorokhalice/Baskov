@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="page.css">
+
+    <title>Text</title>
+  </head>
+<body>
+<div class="hello">
+	<a href="#"><p>Текст "Золотой чаши"</p></a>
+ 
+	</div>
+	<hr>
+	<div class="container list1">
+	<ul>
+		<li> <a href="index.html">Главная</a> </li>
+		<li> <a href="news.html" target="_blank"> Новости</a> </li>
+		<li> <a href="biography.html" target="_blank">Биография</a> </li>
+		<li> <a href="creation.html" target="_blank">Творчество</a> </li>
+		<li> <a href="records.html" target="_blank">Записи выступлений</a> </li>
+		<li> <a href="texts.html" target="_blank">Текст "Золотой чаши"</a> </li>
+
+	</ul>
+	</div>
+<button onclick="myFunction()">Узнать текст песни?</button>
+
+<p id="demo"></p>
+
+<script>
+var cars = [
+{type:"#4e72d8", div:'<div style = "color: gold; background-color:#4e36d8"> Наполняет ароматом чая </div>'},
+{type:"#4e27d8", div:'<div style = "color: gold; background-color:#4e90d8"> Ты мне даришь заботу свою. </div>'},
+{type:"#4e45d8", div:'<div style = "color: gold; background-color:#4e72d8"> С каждым днем все сильнее люблю. </div>'},
+{type:"#4e63d8", div:'<div style = "color: gold; background-color:#4e54d8"> Золотая чаша, Золотая  </div>'},
+{type:"#4e36d8", div:'<div style = "color: gold; background-color:#4e81d8"> От любви смысл жизни рождается, </div>'},
+{type:"#4e81d8", div:'<div style = "color: gold; background-color:#4e27d8"> Дом в котором счастье обитает,  </div>'},
+{type:"#4e54d8", div:'<div style = "color: gold; background-color:#4e63d8"> ОООООООО... </div>'},
+{type:"#4e99d8", div:'<div style = "color: gold; background-color:#4e18d8"> Золотая чаша, Золотая  </div>'},
+{type:"#4e18d8", div:'<div style = "color: gold; background-color:#4e99d8"> Ты прекрасна в печали и радости, </div>'}]
+
+displayCars();
+
+function myFunction() {
+    cars.sort(function(a, b){
+        var x = a.type.toLowerCase();
+        var y = b.type.toLowerCase();
+        if (x < y) {return -1;}
+        if (x > y) {return 1;}
+        return 0;
+    });
+    displayCars();
+}
+
+function displayCars() {
+  document.getElementById("demo").innerHTML =
+  cars[0].div + "<br>" +
+  cars[1].div + "<br>" +
+  cars[2].div + "<br>" +
+  cars[3].div + "<br>" +
+  cars[4].div + "<br>" +
+  cars[5].div + "<br>" +
+  cars[6].div + "<br>" +
+  cars[7].div + "<br>" +
+  cars[8].div;
+}
+</script>
+
+</body>
+</html>

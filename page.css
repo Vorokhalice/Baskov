@@ -1,0 +1,101 @@
+body { 
+	background: rgba(127, 255, 212, 0.25)
+}
+
+h1 {
+	text-align: center;
+	top: 100px;
+	text: 700px;
+}
+
+.heading {
+	padding:2rem 1rem;
+	margin-bottom:2rem;
+	background-color: rgba(0,250,154,0.3); 
+	border-radius:.3rem;
+	color: Navy;
+}
+
+ul li {
+	display: inline;
+	margin-right: 50px;
+}
+
+img {
+	padding: 1em;
+	float: left;
+	margin: 1em;
+}
+
+a {
+	color: DarkBlue;
+}
+
+.hello {
+	color: Navy;
+	text-align: center;
+}
+
+p {
+	font-size: 2em;
+}
+
+hr {
+	color: Navy;
+	background-color: Navy;
+	height: 2px;
+}
+
+.list1 {
+	font-size: 20px;
+}
+
+.big {
+	font-size: 60px;
+}
+.text {
+	color: Navy;
+	font-size: 1.5em;
+	text-indent: 1.5em;
+}
+
+.line {
+	color: Gainsboro;
+	background-color: Gainsboro;
+	height: 1px;
+	right: 20em;
+	width: 50%;
+}
+
+.t1 {
+	float: right;
+	font-size: 1.5em;
+}
+
+aside {
+	margin: 8%;
+	text: 1em;
+}
+
+ol {
+	list-style-type: circle;
+	
+}
+
+.float {
+	float: right;
+}
+
+.space {
+	margin-top:7%;
+}
+
+.news {
+	font-size: 2em;
+	color: Navy;
+}
+
+.newsimg {
+	text-align:center;
+	float: none;
+}
